@@ -31,9 +31,9 @@ During this assignment, you will:
 # Phase 1 [for credit]
 
 ## Task 0: Fork this repo on GitHub
-**To get started, fork this repo on GitHub and then make a clone.**
+**To get started, fork this repo on GitHub and then make a clone.** did
 
-Open the project in IntelliJ and make sure you can successfully run `app/MainWithDB.java`.
+Open the project in IntelliJ and make sure you can successfully run `app/MainWithDB.java`. did
 Note: you may need to set the Project SDK in the `Project Structure...` menu, and possibly
 also manually link the Maven project.
 
