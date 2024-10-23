@@ -231,20 +231,20 @@ by typing `git status` and reading the first line of output. Use `git switch` if
       userDataAccessObject.setCurrentUser(user.getName());
 ```
 IntelliJ won't like that: the `setCurrentUser` method doesn't exist. Get IntelliJ to generate
-the method for you. Notice that it puts it into the `LoginUserDataAccessInterface`. That causes a problem with
-the three implementing classes: all of them need to be updated.
+the method for you. did Notice that it puts it into the `LoginUserDataAccessInterface`. That causes a problem with
+the three implementing classes: all of them need to be updated. ?didn't do
 
-Let's quickly make the File and DB ones compile; that's just so we can run the program. They won't be used.
+Let's quickly make the File and DB ones compile; that's just so we can run the program. They won't be used. did
 
-2. Open them and let IntelliJ generate the missing methods. Leave the method bodies empty. 
+2. Open them and let IntelliJ generate the missing methods. Leave the method bodies empty. did 
 
 3. Now focus on class `InMemoryUserDataAccessObject`. Open it and get IntelliJ to fix it so that it compiles,
-   which creates an empty method. In that method, type this:
+   which creates an empty method. In that method, type this: did
 ```
       this.currentUser = name;
-```
+``` 
 That causes an error. Let IntelliJ fix it for you by introducing an instance variable.
-Let's say `null` means that nobody is logged in, so we leave the default value.
+Let's say `null` means that nobody is logged in, so we leave the default value. according to piazza don't have to do
 
 4. Add and commit your work, then push to your branch on GitHub.
 
