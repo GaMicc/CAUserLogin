@@ -309,7 +309,7 @@ learned about Junit, what might we do to improve the efficiency of our testing s
 5. Run Checkstyle with the provided `mystyle.xml` configuration to make sure you didn't introduce any style issues.
    Fix any style errors. did
 
-5. Add and commit your work, then push to your branch on GitHub.
+5. Add and commit your work, then push to your branch on GitHub. didn't add. 
 
 And you're done with Phase 1!
 
