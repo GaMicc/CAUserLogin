@@ -164,7 +164,7 @@ is called a *cache* of the information in the file.
   * It's also simple to write, which means that you can start
     programming your Use Cases before you even have the details of data persistence worked out.
 
-### Task 1: Switch from DBUserDataAccessObject to InMemoryDataAccessObject [for credit]
+### Task 1: Switch from DBUserDataAccessObject to InMemoryDataAccessObject [for credit] did
 
 The program is currently connecting to an external API — the one
 from lab 3, but a different API endpoint for storing a password protected
@@ -185,21 +185,21 @@ git switch paul.gries
 ```
 
 2. In the `app` package, make a copy of `MainWithDB.java` and call it
-   `MainWithInMemory.java`.
+   `MainWithInMemory.java`. did
 
 3. To change the type of DAO, you need to edit the place where it is
    instantiated. To find it, right-click on `DBUserDataAccessObject` in the Project tree and
    select `Find Usages`. There should be several results. Click the one where
-   the new instance is created in `MainWithInMemory` and go to the code.
+   the new instance is created in `MainWithInMemory` and go to the code. did
 
 4. Now change `DBUserDataAccessObject` to `InMemoryUserDataAccessObject`. That should
    only occur twice in class `MainWithInMemory`. The `InMemoryUserDataAccessObject` constructor
    does not need a `UserFactory` because it doesn't need to convert from a raw storage format
-   (strings and numbers) to `User` objects and vice versa, unlike `DBUserDataAccessObject`.
+   (strings and numbers) to `User` objects and vice versa, unlike `DBUserDataAccessObject`. did
 
 We'll work with `InMemoryUserDataAccessObject` for the rest of the assignment.
 
-Try running the `MainWithInMemory` program to make sure that it works.
+Try running the `MainWithInMemory` program to make sure that it works. did
 
 5. Add and commit `MainWithInMemory.java`. Push your code to GitHub; making sure that it is on the branch you just made.
 
