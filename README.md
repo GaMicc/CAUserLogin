@@ -246,7 +246,7 @@ Let's quickly make the File and DB ones compile; that's just so we can run the p
 That causes an error. Let IntelliJ fix it for you by introducing an instance variable.
 Let's say `null` means that nobody is logged in, so we leave the default value. according to piazza don't have to do
 
-4. Add and commit your work, then push to your branch on GitHub.
+4. Add and commit your work, then push to your branch on GitHub. didn't add anything? but committed? 
 
 * * *
 
@@ -279,14 +279,14 @@ The following sequence of steps summarizes how one might test this code:
 * check that the user is logged in
 
 1. **This sounds a lot like `successTest` in that test file! To get started, copy and paste that method and rename the new method
-as `successUserLoggedInTest`.**
+as `successUserLoggedInTest`.** did
 
 The method starts by creating the Input Data and saving it in the repository. Nobody is logged in.
 
 Then the success Presenter is instantiated from an anonymous class that implements interface `LoginOutputBoundary`.
 Method `prepareSuccessView` is called at the very end of the Interactor code when the use case is complete.
 
-2. **Update the `assertEquals` call to assert that `"Paul"` is the return value of `userRepository.getCurrentUser()`.**
+2. **Update the `assertEquals` call to assert that `"Paul"` is the return value of `userRepository.getCurrentUser()`.** did
 
 3. **Method `getCurrentUser` doesn't exist yet, so IntelliJ will yell at you. Get it to fix it for you by
    creating the method. This gets added to `LoginUserDataAccessInterface`. Now all implementers have to have it
@@ -294,20 +294,20 @@ Method `prepareSuccessView` is called at the very end of the Interactor code whe
 
   - For `DB` and `File`, you can leave the generated code as it is.
 
-  - **Fix `InMemoryUserDataAccessObject` so that the new method returns the current username as a `String`.**
+  - **Fix `InMemoryUserDataAccessObject` so that the new method returns the current username as a `String`.** did? didn't do anything to make it a string
 
 **Thought question:** We've added a getter because the test needs it, not because the program needs it. Is this bad?
 
 4. **There's one more thing to check: before the use case is executed, the current user should initially be `null`.
-Add an `assertNull` call just before the `interactor.execute(inputData);` call to make sure this is true.**
+Add an `assertNull` call just before the `interactor.execute(inputData);` call to make sure this is true.** did
 
-Now run the tests. All of them, including your new one, should pass.
+Now run the tests. All of them, including your new one, should pass. did
 
 **Thought question:** Several of the tests have similar code to set them up; based on what we
 learned about Junit, what might we do to improve the efficiency of our testing structure?
 
 5. Run Checkstyle with the provided `mystyle.xml` configuration to make sure you didn't introduce any style issues.
-   Fix any style errors.
+   Fix any style errors. did
 
 5. Add and commit your work, then push to your branch on GitHub.
 
